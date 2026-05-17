@@ -1,0 +1,17 @@
+<tr>
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td>
+        <span class="badge <%= user.user_type === 'admin' ? 'bg-danger' : 'bg-secondary' %>">
+            <%= user.user_type || 'user' %>
+        </span>
+    </td>
+    <td>
+        <a href="/admin/promote/<%= encodeURIComponent(user.email) %>" class="btn btn-sm btn-danger me-1">
+            Promote to Admin
+        </a>
+        <a href="/admin/demote/<%= encodeURIComponent(user.email) %>" class="btn btn-sm btn-success">
+            Demote to User
+        </a>
+    </td>
+</tr>
