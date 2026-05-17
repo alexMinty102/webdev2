@@ -1,0 +1,17 @@
+Student Name: Alex Minty
+Student Set: 1A
+
+Assignment 2 – Self-Graded Checklist
+
+[x] The /admin page redirects to the /login page if not logged in.
+[x] The /admin page shows an error message if logged in, but not an admin (403).
+[x] The /admin page shows a list of all users.
+[x] The /admin page allows for promoting and demoting users to/from admin type.
+[x] All pages use a CSS Framework (Bootstrap) – header, footer, responsive grid, forms, buttons
+[x] The site uses EJS as a templating engine.
+[x] Common headers and footers are shared across all pages.
+[x] Code used within loop is templated using EJS
+[x] The members page has a responsive grid of 3 images.
+[x] Your site is hosted on Render or other hosting site.
+
+50/50
