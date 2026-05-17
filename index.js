@@ -156,7 +156,9 @@ app.post('/loginSubmit', async (req, res) => {
 
 // Members – GET (login required)
 app.get('/members', requireLogin, (req, res) => {
-    res.render('members', { name: req.session.name });
+    const images = ['cat1.jpg', 'cat2.jpg', 'cat3.jpg'];
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    res.render('members', { name: req.session.name, images, randomImage });
 });
 
 // Log out
